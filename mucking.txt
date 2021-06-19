@@ -1,0 +1,209 @@
+        # Look for pattern on line
+        found_pattern = line.find(todo_pattern)
+
+        while True:
+            # determine where the description should start...
+            start_pos = found_pattern + len(todo_pattern)
+            # ...and store it...
+            item_desc = line[start_pos:]
+            # ...and where it was found
+            found_pos = '{0}:{1}'.format(line_num, found_pattern)
+            if found_pattern != -1:
+                # see if the line has more instances of pattern
+                found_pattern = line.find(todo_pattern, start_pos)
+                if found_pattern != -1:
+                    # if found, then use the location...
+                    item_desc = line[start_pos:found_pattern - 1]
+                    # ...to delimit and print 
+                    print('{0:<10} {1} {2}'.format(found_pos, todo_repr, item_desc))
+                else:
+                    # if not then print to the end of the line
+                    print('{0:<10} {1} {2}'.format(found_pos, todo_repr, item_desc))
+            # if no (more) patterns found, then exit the while
+            else:
+                break
+
+        # Capture waiting todo items
+        found_pattern = line.find(wait_pattern)
+
+        while True:
+            start_pos = found_pattern + len(wait_pattern)
+            item_desc = line[start_pos:]
+            found_pos = '{0}:{1}'.format(line_num, found_pattern)
+            if found_pattern != -1:
+                found_pattern = line.find(wait_pattern, start_pos)
+                if found_pattern != -1:
+                    item_desc = line[start_pos:found_pattern - 1]
+                    print('{0:<10} {1} {2}'.format(found_pos, wait_repr, item_desc))
+                else:
+                    print('{0:<10} {1} {2}'.format(found_pos, wait_repr, item_desc))
+            else:
+                break
+
+        # Capture killed todo items
+        found_pattern = line.find(kill_pattern)
+
+        while True:
+            start_pos = found_pattern + len(kill_pattern)
+            item_desc = line[start_pos:]
+            found_pos = '{0}:{1}'.format(line_num, found_pattern)
+            if found_pattern != -1:
+                found_pattern = line.find(kill_pattern, start_pos)
+                if found_pattern != -1:
+                    item_desc = line[start_pos:found_pattern - 1]
+                    print('{0:<10} {1} {2}'.format(found_pos, kill_repr, item_desc))
+                else:
+                    print('{0:<10} {1} {2}'.format(found_pos, kill_repr, item_desc))
+            else:
+                break
+
+        # Capture done todo items
+        found_pattern = line.find(done_pattern)
+
+        while True:
+            start_pos = found_pattern + len(done_pattern)
+            item_desc = line[start_pos:]
+            found_pos = '{0}:{1}'.format(line_num, found_pattern)
+            if found_pattern != -1:
+                found_pattern = line.find(done_pattern, start_pos)
+                if found_pattern != -1:
+                    item_desc = line[start_pos:found_pattern - 1]
+                    print('{0:<10} {1} {2}'.format(found_pos, done_repr, item_desc))
+                else:
+                    print('{0:<10} {1} {2}'.format(found_pos, done_repr, item_desc))
+            else:
+                break
+            
+
+
+import sqlite3
+import configparser
+
+def init_db(cur):
+    sql_create_matched_items_table = ''' Create Table matched_items (
+                                            row INTEGER,
+                                            type TEXT,
+                                            description TEXT,
+                                            scheduled INTEGER,
+                                            deadline INTEGER,
+                                            path TEXT,
+                                            position TEXT
+                                        ); '''
+
+    sql_create_patterns_table = '''Create Table patterns (
+                                        name TEXT,
+                                        representation TEXT,
+                                        pattern TEXT
+                                    )'''
+    cur.execute(sql_create_patterns_table)
+    cur.execute(sql_create_matched_items_table)
+
+def populate_patterns(cur, config):
+    config.read('patterns.ini')
+    sql = ''' INSERT INTO patterns(
+        name,representation,pattern)
+        VALUES(?,?,?) '''
+    for section in config.sections():
+        pattern_data = (config[section]['Name'], config[section]['Representation'], config[section]['Pattern'])
+        cur.execute(sql, pattern_data)
+
+    #cur.execute('''INSERT INTO matched_items (
+    #    Row, Type, Description, Scheduled, Deadline, Path, Position)
+    #    VALUES (?,?,?,?)''')
+
+# TODO Store all the fields of agenda/todo items
+# Best option seems to be either in-memory sqlite3 or list of dictionaries
+# https://stackoverflow.com/questions/1038160/data-structure-for-maintaining-tabular-data-in-memory
+# The fields are
+# - Type: todo, waiting todo, killed todo 
+# - Scheduled: Null or Date/time
+# - Deadline: Null or Date/time
+# - Description: Text of the item
+# - File Name: path/to/file/filename.md
+# - Position: line:pos
+def populate_matched(cur, line, line_num, pattern, repre):
+    #cur.execute('''INSERT INTO matched_items (
+    #    Row, Type, Description, Scheduled, Deadline, Path, Position)
+    #    VALUES (?,?,?,?)''')
+
+    # Look for pattern on line
+    found_pattern = line.find(pattern)
+    
+    while True:
+        # determine where the description should start...
+        start_pos = found_pattern + len(pattern)
+        # ...and store it...
+        item_desc = line[start_pos:]
+        # ...and where it was found
+        found_pos = '{0}:{1}'.format(line_num, found_pattern)
+        if found_pattern != -1:
+            # see if the line has more instances of pattern
+            found_pattern = line.find(pattern, start_pos)
+            if found_pattern != -1:
+                # if found, then use the location...
+                item_desc = line[start_pos:found_pattern - 1]
+                # ...to delimit and print 
+                # TODO Replace with DB stuff / turn in to function
+                print('{0:<10} {1} {2}'.format(found_pos, repre, item_desc))
+            else:
+                # if not then print to the end of the line
+                print('{0:<10} {1} {2}'.format(found_pos, repre, item_desc))
+        # if no (more) patterns found, then exit the while
+        else:
+            break
+
+
+def main():
+    # TODO load from config file instead
+    todo_file = 'todo.md'
+    welcome = 'Orgdown Todo Finder'
+    
+    db = sqlite3.connect(':memory:')
+    cur = db.cursor()
+    init_db(cur)
+    config = configparser.ConfigParser()
+    populate_patterns(cur, config)
+    populate_matched(todo_file, cur, line, line_num)
+
+    print('\n\n{:-^50}\n'.format(welcome))
+
+    with open(todo_file, 'r') as f:
+        read_data = f.read()
+        line_num = 1
+        for line in read_data.split("\n"):
+
+            # Search each of the patterns, extracting the items
+            populate_matched(cur, line, line_num, todo_pattern, todo_repr)
+            populate_matched(cur, line, line_num, wait_pattern, wait_repr)
+            populate_matched(cur, line, line_num, kill_pattern, kill_repr)
+            populate_matched(cur, line, line_num, done_pattern, done_repr)
+
+            line_num += 1
+
+
+    # TODO Agenda display
+
+    print('\n\nfile closed: {}\n\n'.format(f.closed))
+
+
+if __name__ == '__main__':
+    main()
+    
+
+name = config[section]['Name']
+repre = config[section]['Representation']
+pattern = config[section]['Pattern']
+pattern_data = (name, repre, pattern)
+
+def display_agenda(cur):
+    welcome = 'Orgdown Todo Finder'
+    print('\n{:=^50}\n'.format(welcome))
+    cur.execute('SELECT * FROM matched_items')
+    matches_table = cur.fetchall()
+    print('{0:<10} {1} {2: ^30}'.format('line #', 'state', 'description'))
+    print('{:-^50}'.format(''))
+    for row in matches_table:
+        cur.execute('SELECT representation FROM patterns WHERE name=?', (row[1],))
+        pattern_repr = cur.fetchone()[0]
+        print('{0:<10} {1} {2}'.format(row[0], pattern_repr, row[2]))
+    print('\n')

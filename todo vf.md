@@ -1,0 +1,450 @@
+> Personal/General ToDos: [[todo]]
+
+# VF TODO
+
+- DONE Mini python app to generate output.csv from these ToDos?
+  - CLOSED: 2021-06-10 Thu 10:32
+  - CUSTOMER: Waka Kotahi
+  - STARTED: 2021-06-10 Thu 08:31
+- DONE Automation: Hard code exception for swollen batteries/similar
+  - CLOSED: 2021-06-10 Thu 14:32
+  - CUSTOMER: BNZ
+  - STARTED: 2021-06-10 Thu 10:50
+
+
+# DONE
+
+- DONE Automation: Debug current bot errors (disable bots, run locally)
+  - CLOSED: 2021-06-09
+- DONE Automation: 100 Updates to one ticket!
+  - CLOSED: 2021-06-09
+- DONE Automation: Filter out specific errors that are warn/inform
+  - CLOSED: 2021-06-09
+- DONE Automation: Ensure automation errors notify
+  - CLOSED: 2021-06-09
+- DONE Do 3+ Planner Tasks (Process etc)
+  - CLOSED: 2021-06-09
+  - DONE [[2106091331 ANZ Mobility Template]]
+    - CLOSED: 2021-06-09
+- DONE Automation: Review remote access to the server
+  - CLOSED: 2021-06-08
+- DONE Automation: Fix Bot Monitoring Site
+  - CLOSED: 2021-06-08
+- DONE Automation: Liven Compiled files
+  - CLOSED: 2021-05-26 Done but wasn't work ootb
+- DONE Automation: Check in with Karan regarding next steps
+  - CLOSED: 2021-05-24
+- DONE Investigate Max Num Categories / Impact not recording INC in emails
+  - CLOSED: 2021-05-24
+  - Tested with 100+ categories in my personal, seems happy
+    - Possible next step: Automate creation of 10s of thousands
+- DONE Automation: Get approval for increase to 10 bucket
+  - CLOSED: 2021-05-24
+- DONE Increase bot bucket
+  - CLOSED: 2021-05-21
+- DONE Fix new errors introduced by update
+  - CLOSED: 2021-05-21
+- DONE Help Sarsha
+  - CLOSED: 2021-05-21
+- DONE Continue mail managering
+  - CLOSED: 2021-05-21
+- DONE Go live with new bot and supporting that
+  - CLOSED: 2021-05-21
+- DONE Testing and handover with Karan (All week)
+  - DONE Implement fix for similar emails being assigned continuously to poeple
+    - CLOSED: 2021-05-20
+  - DONE Compile and deploy new version with my changes (.ini files)
+    - CLOSED: 2021-05-20
+- DONE Touch base with Sam Piper re MDM extract
+  - CLOSED: 2021-05-20
+- DONE Catch up on ops mailbox as mail manager
+  - CLOSED: 2021-05-20
+- DONE Verify everyone's outlook config
+  - CLOSED: 2021-05-20
+  - WFH:
+      DONE Damian Cumming
+      DONE Rick Nettles
+      DONE Alex Smith
+      DONE Alex Ryder
+      DONE Heidi Wang
+      James Collins
+      TODO Request Corey Gavegan Unlocked Cache
+      Rick Harris
+      Sae Alapati
+      DONE Steffan McIvor
+      DONE Dan Blair
+  - AKL:
+      DONE Andrew Huang
+      Cheryl Prasad
+      David Sempio
+      DONE Fahim Kaidawala
+      Jack Zhang
+      James Chen
+      Jayne Macpherson
+      Jordan Laing
+      Kalpana Podduturi
+      Li Hai Tao
+      Lucy Wansbone
+      Maria Mau
+      Roger Pemberton
+- DONE Support Overview for Amazon Connect / CCP
+  - CLOSED: 2021-05-18
+  - raise with 021 solve it for single user issues, and day of ops for wide issues
+  - Routing/FYIs/Comms/Documentation/Training/Processes surrounding the use of Connect, come to Ops in the first instance
+- DONE Investigate Paddy Kapoor missing in stats
+  - CLOSED: 2021-05-18
+- DONE Investigate duplicated westpac incs
+  - CLOSED: 2021-05-18
+- DONE Watch Problem Management Cloud Workshop
+- DONE Update to more convenient layout ops wfh roster
+  - CLOSED: 2021-05-14
+- DONE Follow ou RF - MBIE iptel offboarding email
+  - CLOSED: 2021-05-18 Sent a detailed email
+- DONE Investigate suggestion from Jesse
+  - CLOSED: 2021-05-14
+- DONE Sam - MBIE new email
+  - DONE Email and Calendar Entry Outlining Requirements
+    - CLOSED: 2021-05-17
+- DONE Fix up the SBR Roster
+  - CLOSED: 2021-05-14
+- DONE Meeting around Worksafe IVR
+  - CLOSED: 2021-05-13
+  - CCL -> 0800 225 976 - Garry
+  - Garry believes worksafe should be calling their 0800 directly
+    - He believes CCL would warm transfer to vodafone and vodafone should not receive calls directly from worksafe staff (I question this)
+    - Apparently worksafe should have stickered laptops advising of the new (CCL) number, since the old datacom one is gone
+- DONE NZ Police Roaming Template Update
+  - CLOSED: 2021-05-13
+- DONE Check in with Aaron Benson re MDM extract
+  - CLOSED: 2021-05-13
+- DONE Investigate SLM Breach for INC2695677 
+  - CLOSED: 2021-05-13
+- DONE Add AHT to MPR (and Weekly dash)
+  - DONE Some historical data is required too
+    - CLOSED: 2021-05-03
+- Service Desk Performance.pbix
+  - DONE Add Corey Gavegan
+    - CLOSED: 2021-05-10
+  - DONE Get missing Genesys Data/fudge
+    - CLOSED: 2021-05-10
+- DONE Contact RF re automation
+  - CLOSED: 2021-05-10
+- DONE Contact Onsite re automation
+  - CLOSED: 2021-05-10
+- DONE Merge Dev Branch and Main
+  - CLOSED: 2021-05-07
+- DONE Automate a new email
+  - CLOSED: 2021-05-08
+- DONE Talk to A Benson
+  - CLOSED: 2021-05-07
+- DONE Fix SDA Roster with SOC changes
+  - CLOSED: 2021-05-06
+- DONE Monitor Log Tail Scripts
+  - CLOSED: 2021-05-06
+- Email Assignment Bot
+  - DONE Attend [[2105060826 Bot Meeting]]
+    - CLOSED: 2021-05-06 Thu 10:14
+- DONE Small customers DCR
+  - CLOSED: 2021-05-03 Technically handed off to Nick, but not sure how he got on...
+- DONE Sam must reduce top 3 areas we identified (templates) by 30%
+  - DONE How many tickets per period to reduce the top 3 areas
+- DONE Double-check access for ua
+  - CLOSED: 2021-05-03
+- DONE Refine SDP PBI and Update for Month/Week
+  - CLOSED: 2021-05-03
+- DONE Rebuild ServiceDeskPerformance Query for AWS
+  - CLOSED: 2021-04-30
+- DONE Send Usernames for Licenses:
+  - CLOSED: 2021-04-30
+  - James Bayliss (jbaylis)
+  - Manson Chen (machen)
+  - Caleb Madgwick (madgwicc)
+  - Adam King (kinga5)
+  - Lester Folke (lfowke)
+- DONE Finish Moving Reports
+  - CLOSED: 2021-04-28
+- DONE Add 24186 to BNZ
+  - CLOSED: 2021-04-29
+- DONE DFD Diagram of all reports/information sources and destinations
+  - CLOSED: 2021-04-28
+- DONE Charles, testing and more automation 'ACC Asset Tracker Report'
+  - CLOSED: 2021-04-27
+- DONE Look for Opportunity to beef up Police
+  - CLOSED: 2021-04-27
+- DONE Training Plan for 5 profiles, eventually full cover (backups)
+  - CLOSED: 2021-04-27
+- DONE Alex Smith on SEM Line
+  - CLOSED: 2021-04-27 Done, will need to remove
+- DONE Charlie macro reports (Decom and SwapKit - remember don't need col I)
+  - CLOSED: 2021-04-23
+- DONE 48 Hour Debrief
+  - CLOSED: 2021-04-23
+- DONE Meeting: SOC Operations overview of ATC and W&I Automation
+  - CLOSED: 2021-04-23
+- DONE Rebase off main branch
+  - CLOSED: 2021-04-22
+- DONE Missing guest wifi MB investigation
+  - CLOSED: 2021-04-22
+- DONE Numbers to target AWS
+  - CLOSED: 2021-04-22
+- DONE Finalize whats happening with profiles with factoring in confidence/adds only
+  - CLOSED: 2021-04-18
+- DONE First section - more specific, no e.g.s, move some of the specifics to first section, specific behaviours for second sections  
+  - CLOSED: 2021-04-20
+- DONE Sam Police DCR 6-month
+  - CLOSED: 2021-04-20
+- DONE Top call drivers - within those ensure customer identified to identify opportunities
+  - CLOSED: 2021-04-20
+- DONE Restore Morgan's profile
+  - CLOSED: 2021-04-20
+- DONE Morgan on NZDF for 1 hour
+  - CLOSED: 2021-04-20
+- DONE Sam NPS questions
+  - CLOSED: 2021-04-19
+- DONE Sam GOS last 3 months - Police failed
+  - CLOSED: 2021-04-19
+- DONE Get drop-in times for SDAs to Anne 
+  - CLOSED: 2021-04-19
+- DONE Ask Steven Easton and co if we can access the raw/flatfiles from Connect
+  - CLOSED: 2021-04-19
+- DONE eLearning and checking access
+  - CLOSED: 2021-04-14
+- DONE Investigate/log in to KB
+  - CLOSED: 2021-04-14
+- DONE Email team about new KB and what ESC use
+  - CLOSED: 2021-04-14
+- DONE Help Joel with SBR groupings
+  - CLOSED: 2021-04-13
+- DONE Git push/pull over the Proxy
+- DONE Start working on the epic karan assigned me in azure - setting up UAT/tests
+  - CLOSED: 2021-04-13
+- DONE Identify all variables to be configured with new .ini file
+  - CLOSED: 2021-04-13
+  - Log file paths:
+    - email_automation_log_file_path
+    - email_assignment_log_file_path
+  - file paths:
+    - temp_save_path_partial
+    - save_path_partial
+  - outlook:
+    - email_assignment_mailbox
+    - email_assignment_mailbox_inbox
+    - working_folder_name
+    - email_assignment_bot_enabled
+  - file paths after expanding home (~):
+    - worklogs_processed_filepath
+    - last_sda_file_path
+    - iot_ticket_file
+    - automation_config_file_path
+    - sda_roster_spreadsheet_path
+    - client_recognition_spreadsheet_path
+    - support_staff_list_path
+    - filing_folders_list_path
+    - email_from_address_list_path
+  - Regex Stuff:
+    - eremedy_reference_regex_pattern
+    - csc_snow_reference_regex_pattern
+    - gsd_gremedy_reference_regex_pattern
+    - request_snow_reference_regex_pattern
+    - change_gremedy_reference_regex_pattern
+  - Probably not required in .ini:
+    - notification_from_address
+    - notification_error_address
+    - egnz_from_address
+    - vss_from_address
+    - second_of_day, minute_of_day, date_today, sla_time_24hrs_ago
+    - public_holiday
+    - time_subtractor
+- DONE Self Review - Make a start [[2103300822 VF Self-Review 2020-21]]
+  - DONE Write up overview
+- DONE Continue Outlook Triage
+  - DONE Re-double handoff to Day of Ops
+  - DONE Check on Case 06/04
+  - DONE Complete more troubleshooting/examples via phone
+  - DONE Investigate missing emails
+  - DONE Get Day of ops managing this
+  - DONE Send example duplicate emails (headers)
+  - DONE Check for updates 31/03
+- DONE Re gather recent data Integration Proposal etc
+  - CLOSED: 2021-04-07 Did as requested, but may require further jigging
+- DONE Finish work on Template(s) 
+  - CLOSED: 2021-04-07
+- KILL Email Andrew/Sam highlighting the risk of not having a profile per person
+- KILL Gym with Charlie - leave @12:10ish
+- DONE Finish rerunning & compiling email summarizer
+  - CLOSED: 2021-03-30
+- DONE Confirm/configure python environment(s)
+  - CLOSED: 2021-04-01
+- DONE Rerun Rework report
+  - CLOSED: 2021-04-01
+- DONE AWS Review buld for BE and ESD
+  - CLOSED: 2021-04-01
+- KILL CX and Qual workshop 
+- DONE Update Kaainga Password
+- DONE Suggest a Roster to ensure recovery time from night vs day
+  - CLOSED: 2021-03-31 Done, but could do more
+- DONE Report for Conan
+  - CLOSED: 2021-03-31
+- DONE Get access to gitlab and get on the main branch
+  - CLOSED: 2021-03-31
+- DONE check public updates work
+  - CLOSED: 2021-03-31 Karan had to apply a fix, due to compiling without a particular import and cache set up, which would have fixed this issue
+- DONE Use updated python bot to compile and replace exe
+  - CLOSED: 2021/03/30 Done, but need to get access to push update to gitlab
+- DONE Sam Friday Assignment
+  - CLOSED: 2021-03-26
+- DONE Check Exchange Bot for missing assingment
+  - CLOSED: 2021-03-26
+- DONE Install Anaconda and double check Python Debugging working
+  - CLOSED: 2021-03-25
+- DONE BE Capacity Impact
+  - CLOSED: 2021-03-25
+  - PROGRESS: 100%
+  - REMEAINING TASKS:
+    - DONE Sheet for Utilization using existing data
+    - DONE Factor in new data to demonstrate utilization/estimate required FTE
+    - DONE Attend meeting with Sam
+- DONE MOJ Clearances
+  - CLOSED: 2021-03-19
+- DONE Test fix for Outlook
+  - CLOSED: 2021-03-19
+- DONE Find out how many tickets BE log to Service Assurance
+  - CLOSED: 2021-03-19
+  - Apparently ESC log around 100 month
+  - BE would be more
+  - Question: how many Service Analysts are required to support BE and ESC?
+  - REMAINING TASKS:
+    - DONE Get userIDs off Saraswati
+    - DONE Talk to Horace to obtain 6 months data
+    - DONE Ask Joel...
+- DONE Set up stand up table alternative location
+  - CLOSED: 2021-03-17
+- DONE Action A Mangels email Re Structure
+  - CLOSED: 2021-03-16
+- DONE Continue follow up Z drive
+  - CLOSED: 2021-03-16 Tue
+- DONE Weekly Reporting
+  - CLOSED: 2021-03-16 Tue
+  - PROGRESS: 100%
+  - REMAINING TASKS:
+    - DONE Performance Report
+    - DONE Remapping Shortcuts/Queries
+    - DONE Night Operations Report
+- DONE Continue with Saraswati and Sam
+  - CLOSED: 2021-03-16 Tue
+- DONE Speak with Saraswati.Rana@vodafone.com about discussion with Sam
+  - CLOSED: 2021-03-16 Tue
+- DONE Attempt discussed with Sarsha in her PBI thingo
+- DONE Test out different exchange strategy to test effectiveness w/Sarsha
+  - CLOSED: 2021-03-15 Mon 01-24
+- DONE Build VBA/AHK Macro for Email reporting unnattended retrying
+- DONE Gather/force (ph) feedback from SDMs on Priority customers
+- DONE main one we we're getting is: when you doing this so I can tell the customer?
+  - Change is scheduled for 2021-4-6 Tue
+- DONE And then it's just including NZDF
+  - CLOSING NOTE: I replied to them, 6th of april is target date, NZDF is included, its a no change to CX one
+
+# Quick Notes
+
+- SNOW implementation planned for Oct 2021, Sam expects March for replacement of eRemedy, eRemedy Integration intiatives (BMC Remedy) could still be a win prior
+  - Andrew believes SNOW will be in within 2021
+- Outlook Triage
+  - There’s a limitation of concurrent MAPI session for a single mailbox in Outlook client which is 40. For example, if 40 devices are used to connect to this user at the same time, then some outlook sessions may fail as each device connected to this user would generate 2 or more sessions. Do you see any “connecting” in the Outlook status bar
+- Splunk (Reporting Web App/Service)
+- AWS Connect Stuff
+  - My thoughts after UAT:
+    - Customer Effort Survey at end of call should be < 3 questions, unbearable at present. May require informing customers and SDM feedback.
+    - DONE Quick connect lists: are they coming? can any number be a quick connect? any external?
+    - When agent has caller on hold it notifies every 10 seconds. It should be 30 sec or so.
+    - eLearning to be done
+  - Tony thoughts: Still very consumer focussed / "this is how we do it"
+    - Was concerned that SBR wasn't able to be implemented - I confirmed what we have been told and/are planning
+    - Consumer based intent codes (mandatory?) / Deceased customer LMAO
+  - Pending Activities:
+    - Remaining Numbers
+    - Faults with call delivery as identified by myself and Joel
+    - Missing Promo, Transtasmansales, Verint and Datacentre
+    - Ability for historical reporting of Small Customer volumes from day one
+    - BCP related configuration / workaround SLA Acceptance
+    - Sam is keen for the surveys to be switched on
+    - WFM Use or Not Use? Possible processes to minimize/or benefit from the double handling
+- WSDL XML eRemedy
+  - UAT: http://itsmuat:8080/arsys/shared/login.jsp?/arsys/WSDL/protected/list
+  - prod: https://itsmprod.vodafone.co.nz/arsys/shared/login.jsp?/arsys/WSDL/protected/list
+  - dev: http://itsmar7:8080/arsys/shared/login.jsp?/arsys/WSDL/protected/list
+
+- SMF
+  - Modular Architecture
+  - Police is the biggest customer in SMF
+  - S1 are Wellington S2 are auckland
+  - Search device name: NMS_.SYT
+  - NMS1 is availability
+  - NMS2 is capacity mgmt
+  - Software upgrades/optimizations are extrememly good value (many have been done/planned by Andrei)
+  - Couple of additional ones:
+    - WNS5AKN5
+    - WNS013
+    - WNSYS... more devices
+    - WNSYS006
+    - WNSYS002 hosts the older php pages
+    - WNSMFUI100 java pages (.faces) on this server
+    - WNSYS14 dependency (runs mysql and pages require a query to this to work...)
+    - Caching takes care of certain outages
+    - Database is Oracle 10G - good and reliable, not expected to face more database issues (after a restart after 10 years!)
+    - WNSMFDB
+    - WNSFMAP100 Main Application Server - Aggregates all streams
+    - WNSYS016
+  - Andrei came back on board and has corrected all alerting except for a couple of servers to be resolved
+    - Restart of main database made a massive improvement
+  - Sputnik: all nms' will move to new hyperflex instance
+    - Start in earnest (maybe) next 3-4 months
+- NOC Roster
+  NOC L2 Only
+    - E: 11:00 - 19:30
+    - L: 11:00 - 19:30
+- Daily GTD Prep (morning/or when feeling untethered):
+  - Monday only: Check Reporting Roster, update todos
+  - Check planner, do any quick tasks, record next task
+  - Check Outlook, do any quick tasks, record next task
+  - Check Azure, do any quick tasks, record next task
+  - Check brain, do any quick tasks, record next task
+  - Prioritise TODOs (just order)
+  - Start list
+- GIT Rebase Strategy
+  - Rebasing off latest master:
+    - create and move to new branch
+    - git rebase origin/master
+    - if needed: git origin --delete old_feature_branch
+      - This only deletes remote branch
+- Interesting Areas of VF
+  - Platforms (Dgt Svc & Tools - Pltfms)
+    - Kris Thornley (platforms lead)
+    - Jeremy West (product owner - AWS Connect)
+- Jared Vern and Chris Gadd - Autobots/Auto Ops
+  - RPA stuff is used for Email (does have orchestration, but still brittle)
+  - Good suggestion: Eliminate email-channel volume other ways (e.g. expose update data)
+    - This is more forward thinking, as email is becoming obsolescent
+  - https://confluence.vodafone.co.nz/confluence/pages/viewpage.action?spaceKey=NOSS&title=ATC+Build
+  - https://confluence.vodafone.co.nz/confluence/display/NOSS/Network+Operational+Support+Systems
+  - https://confluence.vodafone.co.nz/confluence/pages/viewpage.action?spaceKey=NOSS&title=Lurch
+  - https://confluence.vodafone.co.nz/confluence/display/NOSS/Automation+Scripting+Host+-+Administration+Guide
+  - https://confluence.vodafone.co.nz/confluence/pages/viewpage.action?pageId=113353140
+  - Horizon Hypervisor/VDI Manager
+- SNOW Decision Tree and Playbook
+  - Process automation designer
+  - ServiceNow Playbooks
+  - Guided decisions
+- My JD:
+Rory Samson
+SMC Operations analyst
+Aside form BAU operational support for the SOC area (primarily to ESD), I coordinate quality and process improvement initiatives around reporting, automation and ITSM (eRemedy) admin and knowledge management.
+- Automation Actions for Karan Leaving - Notifications and Support:
+  - Filtering out specific errors that are warn/inform, so we only receive those that we need to act on. - Rory
+  - Send these for action to the ESC Operations Mailbox / Teams so that the team get notifications for the times that we need to take actions - Rory
+Update Design documents with the addition of Selenium (used for adding attachments into Worklog) - Karan
+  - Review remote access to the server - Rory
+  - Document support for updating Edge browser driver for selenium - Karan
+  - Create a knowledge base article of email types that are automatically handled - Sarsha
+  - Long Term Actions:
+    - Look at options for removing the reliance on the COE build of Edge with Selenium - TBC
+    - Review enhancements to the bot monitoring website - TBC Actual business processes != tool/workflow processes/models
